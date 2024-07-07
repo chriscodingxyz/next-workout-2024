@@ -20,7 +20,7 @@ export default function DatePage({ params }: { params: { date: string } }) {
         {/* <Header /> */}
         <SlideCalendar
           currentDate={currentDate}
-          datyName={dayName}
+          dayName={dayName}
           month={month}
           day={day}
           year={year}
@@ -28,6 +28,11 @@ export default function DatePage({ params }: { params: { date: string } }) {
       </div>
       <div className={`${inter.className} flex-grow overflow-auto text-xs p-4`}>
         this is the workout for {dayName} {month} {day} {year}
+        <p>Todays workouts</p>
+        <br />
+        <p>Workout Templates</p>
+        <br />
+        <p>lsjdfldsjfls</p>
       </div>
     </div>
   );

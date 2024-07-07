@@ -7,9 +7,9 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={`flex flex-col min-h-[100dvh]`}>
+    <div className={`flex flex-col min-h-[100dvh] max-h-[100dvh]`}>
       <Header />
-      <main className="flex-grow overflow-auto">{children}</main>
+      <main className="flex-grow overflow-y-auto">{children}</main>
       <Footer />
     </div>
   );

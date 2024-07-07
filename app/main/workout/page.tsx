@@ -16,5 +16,5 @@ export default function WorkoutPage() {
   console.log("dateee =>>>>", date);
   //sunday jul 07 2024
 
-  return redirect(`/main/workout/${dayName}-${month}-${day}-${year}`);
+  return redirect(`/main/workout/${month}-${day}-${year}`);
 }

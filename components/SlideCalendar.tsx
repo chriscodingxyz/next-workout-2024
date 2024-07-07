@@ -10,11 +10,28 @@ import {
 import React from "react";
 
 export default function SlideCalendar({ currentDate }: any) {
-  // alert(currentDate.toDateString());
-
-  //sunday jul 07 2024
-
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  // return (
+  //   <div className="overflow-x-auto overflow-y-hidden">
+  //     <div className="flex justify-around text-xs my-1 items-center">
+  //       <ArrowBigLeft strokeWidth={1} size={30} />
+  //       {days.map((day, index) => (
+  //         <div
+  //           className={cn(
+  //             " flex-center-col border-2 border-primary/10 p-1 w-10 border-dotted",
+  //             day === days[currentDate.getDay()] &&
+  //               "font-bold bg-green-500 border-primary border-solid"
+  //           )}
+  //           key={index}
+  //         >
+  //           {day}
+  //         </div>
+  //       ))}
+  //       <ArrowBigRight strokeWidth={1} size={30} />
+  //     </div>
+  //   </div>
+  // );
 
   const userStartWeek = "Mon";
 
@@ -37,7 +54,7 @@ export default function SlideCalendar({ currentDate }: any) {
   // alert(year + month + dateNumber);
   return (
     <div className="overflow-x-auto overflow-y-hidden  flex justify-around text-xs my-1 items-center">
-      <ArrowBigLeft size={16} />
+      <ArrowBigLeft strokeWidth={1} size={30} />
       {newDays.map((day, index) => (
         <div
           className={cn(
@@ -54,7 +71,7 @@ export default function SlideCalendar({ currentDate }: any) {
           </div>
         </div>
       ))}
-      <ArrowBigRight size={16} />
+      <ArrowBigRight strokeWidth={1} size={30} />
     </div>
   );
 }
